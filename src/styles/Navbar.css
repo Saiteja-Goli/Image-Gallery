@@ -1,3 +1,69 @@
-.navbar{
-    background-color: darkgray;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links li:hover {
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Change flex direction to row */
+    justify-content: space-between; /* Align items to the start and space between */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: max-height 0.3s ease; /* Add smooth transition for max-height */
+    max-height: 0; /* Initially hide the links */
+    overflow: hidden;
+  }
+
+  .navbar-links.active {
+    max-height: 200px; /* Adjust max-height to show links */
+  }
+
+  .navbar-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
