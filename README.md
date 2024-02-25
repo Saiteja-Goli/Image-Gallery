@@ -9,9 +9,6 @@ This project is a responsive image gallery built with React. It includes a navig
 - Clean and visually appealing card layout with hover effect.
 - CSS Grid for responsive gallery layout.
 
-## Demo
-
-A live demo of the project can be found [here](#).
 
 ## Installation
 
@@ -34,7 +31,7 @@ npm install
 npm start
 ```
 
-##Structure
+## Structure
 The project is organized into the following folders:
 
 - src/components: Contains React components.
