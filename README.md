@@ -2,7 +2,7 @@
 
 This project is a responsive image gallery built with React. It includes a navigation bar with links to Home, Gallery, Contact, and About pages. The gallery displays a grid of image cards, each containing a random title, a placeholder image, and a price. The layout adjusts dynamically based on screen size, ensuring a seamless user experience across devices.
 
-## Deplpyed Link
+## Deployed Link
 [Image Gallery](https://image-gallery-galgwsttd-saiteja-goli.vercel.app)
 
 ## Features
