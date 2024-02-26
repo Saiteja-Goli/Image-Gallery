@@ -16,7 +16,7 @@ const Gallery = () => {
     };
 
     // Create dummy images with random titles and prices
-    const dummyImages = Array.from({ length: 6 }, (_, index) => ({
+    const dummyImages = Array.from({ length: 30 }, (_, index) => ({
       id: index,
       title: generateRandomString(),
       price: generateRandomPrice(),
